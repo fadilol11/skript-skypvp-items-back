@@ -48,7 +48,6 @@ options:
 
 
 #DO NOT CHANGE ANYTHING !!!
-#For any help dm me on discord 2hmd#0069
 
 on death of player: 
  world is not "{@world}":
