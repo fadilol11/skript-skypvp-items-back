@@ -1,0 +1,128 @@
+
+
+
+options: 
+ #the kit will despawn !
+ kitname: kit
+ 
+ #has to be like this X, Y, Z
+ droplocation: 0, 91, 8
+
+ #The world you have the game on!
+ world: world
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DO NOT CHANGE ANYTHING !!!
+#For any help dm me on discord 2hmd#0069
+
+on death of player: 
+ world is not "{@world}":
+  stop
+ if damage causes is the void:
+  force player to respawn
+  set {_drops::*} to drops
+  drop {_drops::*} at location({@droplocation}, world "{@world}") without velocity  
+  clear drops
+
+
+on damage of player: 
+ world is not "{@world}":
+  stop
+ if damage cause is void:
+  if victim is wearing diamond boots named "{@kitname}":
+   set victim's boots to air
+  if victim is wearing iron boots named "{@kitname}":
+   set victim's boots to air
+  if victim is wearing chain boots named "{@kitname}":
+   set victim's boots to air
+  if victim is wearing leather boots named "{@kitname}":
+   set victim's boots to air
+  if victim is wearing diamond leggings named "{@kitname}":
+   set victim's leggings to air
+  if victim is wearing iron leggings named "{@kitname}":
+   set victim's leggings to air
+  if victim is wearing chain leggings named "{@kitname}":
+   set victim's leggings to air
+  if victim is wearing leather leggings named "{@kitname}":
+   set victim's leggings to air
+  if victim is wearing diamond chestplate named "{@kitname}":
+   set victim's chestplate to air
+  if victim is wearing iron chestplate named "{@kitname}":
+   set victim's chestplate to air
+  if victim is wearing chain chestplate named "{@kitname}":
+   set victim's chestplate to air
+  if victim is wearing leather chestplate named "{@kitname}":
+   set victim's chestplate to air
+  if victim is wearing diamond helmet named "{@kitname}":
+   set victim's helmet to air
+  if victim is wearing iron helmet named "{@kitname}":
+   set victim's helmet to air
+  if victim is wearing chain helmet named "{@kitname}":
+   set victim's helmet to air
+  if victim is wearing leather helmet named "{@kitname}":
+   set victim's helmet to air
+  remove 99 diamond sword named "{@kitname}" from victim's inventory
+  remove 99 iron sword named "{@kitname}" from victim's inventory
+  remove 99 gold sword named "{@kitname}" from victim's inventory
+  remove 99 stone sword named "{@kitname}" from victim's inventory
+  remove 99 wooden sword named "{@kitname}" from victim's inventory
+  remove 99 bow named "{@kitname}" from victim's inventory
+  remove 99 arrow named "{@kitname}" from victim's inventory
+  remove 999 food named "{@kitname}" from victim's inventory
+  remove 99 diamond boots named "{@kitname}" from victim's inventory
+  remove 99 diamond leggings named "{@kitname}" from victim's inventory
+  remove 99 diamond chestplate named "{@kitname}" from victim's inventory
+  remove 99 diamond helmet named "{@kitname}" from victim's inventory
+  remove 99 iron boots named "{@kitname}" from victim's inventory
+  remove 99 iron leggings named "{@kitname}" from victim's inventory
+  remove 99 iron chestplate named "{@kitname}" from victim's inventory
+  remove 99 iron helmet named "{@kitname}" from victim's inventory
+  remove 99 chain boots named "{@kitname}" from victim's inventory
+  remove 99 chain leggings named "{@kitname}" from victim's inventory
+  remove 99 chain chestplate named "{@kitname}" from victim's inventory
+  remove 99 chain helmet named "{@kitname}" from victim's inventory
+  remove 99 leather boots named "{@kitname}" from victim's inventory
+  remove 99 leather leggings named "{@kitname}" from victim's inventory
+  remove 99 leather chestplate named "{@kitname}" from victim's inventory
+  remove 99 leather helmet named "{@kitname}" from victim's inventory
+  cancel event 
+  wait 1 tick
+  kill victim
+
+
+
